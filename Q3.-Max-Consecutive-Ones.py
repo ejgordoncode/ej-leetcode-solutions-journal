@@ -5,7 +5,7 @@
 5            if num == 1:
 6                curr += 1
 7            else:
-8                if curr > maximum: maximum = curr
+8                maximum = max(curr, maximum)
 9                curr = 0
 10        maximum = max(curr, maximum)
 11        return maximum
