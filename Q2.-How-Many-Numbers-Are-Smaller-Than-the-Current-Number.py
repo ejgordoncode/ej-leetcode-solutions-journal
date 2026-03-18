@@ -11,8 +11,9 @@
 11            temp_sum = frequencies[i]
 12            frequencies[i] = summation
 13            summation += temp_sum
-14        
-15
+14        for j in range(len(nums)):
+15            nums[j] = frequencies[nums[j]]
 16
-17        return [frequencies[num] for num in nums]
-18
+17
+18        return nums
+19
